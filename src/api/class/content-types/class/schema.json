@@ -1,0 +1,100 @@
+{
+  "kind": "collectionType",
+  "collectionName": "classes",
+  "info": {
+    "singularName": "class",
+    "pluralName": "classes",
+    "displayName": "class",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 200,
+      "minLength": 3,
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "maxLength": 500
+    },
+    "facilitator_id": {
+      "type": "integer"
+    },
+    "start_time": {
+      "type": "datetime",
+      "required": true
+    },
+    "end_time": {
+      "type": "datetime",
+      "required": true
+    },
+    "category_id": {
+      "type": "integer"
+    },
+    "video_id": {
+      "type": "string",
+      "maxLength": 45
+    },
+    "lang": {
+      "type": "enumeration",
+      "enum": [
+        "en",
+        "hi",
+        "te",
+        "tu"
+      ],
+      "default": "en",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "maxLength": 255,
+      "required": true
+    },
+    "meet_link": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "calendar_event_id": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "facilitator_name": {
+      "type": "string",
+      "maxLength": 80
+    },
+    "facilitator_email": {
+      "type": "string",
+      "maxLength": 120
+    },
+    "material_link": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "max_enrolment": {
+      "type": "integer"
+    },
+    "recurring_id": {
+      "type": "integer"
+    },
+    "sub_title": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "course_version": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "partner_id": {
+      "type": "integer"
+    },
+    "volunteer_id": {
+      "type": "integer"
+    }
+  }
+}
